@@ -1,0 +1,361 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  height: calc(100vh - 150px);
+  background: no-repeat center/cover url("assets/visualsofdana-pw9-BRYMdqs-unsplash.jpg");
+  display: flex;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  align-self: flex-end;
+
+}
+
+
+header nav p {
+  font-weight: bold;
+}
+
+button, .header-color-font {
+  color: #fff;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  font-weight: bold;
+
+}
+
+header nav ul li a {
+  margin: 0 15px;
+  color: #fff;
+
+}
+
+
+.header-container {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+
+
+}
+
+.header-container h1 {
+  margin-bottom: 10px;
+  font-size: 3.3em;
+  margin-top: -40px;
+}
+
+button {
+  padding: 10px 15px;
+  border: 0;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #fff;
+  background: #A64037;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+
+/* CARDS */
+
+.pacotes {
+  padding: 15px;
+  background-color: #B0CDD9;
+  transition: 4s all;
+}
+
+.pacotes .pacote-title {
+  width: 100%;
+  text-align: center;
+  margin: 25px 0;
+
+}
+
+.pacotes .pacote-cards {
+  display: flex;
+  max-width: 950px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pacotes .card {
+  width: 250px;
+  height: 350px;
+  background: #fff;
+  border-radius: 24px 0;
+  margin: 25px;
+  position: relative;
+}
+
+.pacotes .card-image {
+  width: 250px;
+  height: 200px;
+  border-radius: 24px 0 0 0;
+  object-fit: cover;
+}
+
+.card-content ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.card-content ul li {
+  font-size: .6rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: grey;
+  font-weight: bold;
+}
+
+.card-content ul li svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.card-content .card-title {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.pacotes .card .card-tag-top {
+  position: absolute;
+  right: 0;
+  background-color: #A64037;
+  border-radius: 8px 0 0 8px;
+  padding: 5px 10px;
+  top: 5px;
+}
+
+.pacotes .card .card-tag p {
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+}
+
+.pacotes .card .card-tag-bottom {
+  position: absolute;
+  left: 0;
+  transform: translateY(160px);
+  background-color: #276573;
+  border-radius: 0 8px 8px 0;
+  padding: 5px 10px;
+  top: 15px;
+
+}
+
+/* Seção de serviços */
+
+.servicos {
+  padding: 15px;
+}
+
+.servicos .servicos-title {
+  text-align: center;
+  margin: 35px 0;
+}
+
+.servicos .servicos-cards {
+  display: flex;
+  max-width: 950px;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.servicos .card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicos .card svg {
+  width: 60px;
+  height: 60px;
+  margin: 50px 0;
+}
+
+
+.servicos .card h3 {
+  text-align: center;
+}
+
+.servicos .card p {
+  color: grey;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.servicos .card .card-content {
+  height: 180px;
+  text-align: center;
+  margin-bottom: 25px;
+  display: block;
+}
+
+/* Mapa e área de contatos */
+
+
+
+.contato .espaco {
+  padding: 60px;
+  background-color: #B0CDD9;
+}
+
+.contato iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.contato {
+  position: relative;
+  background-color: #B0CDD9;
+}
+
+
+.contato  .contato-card {
+  width: 350px;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  z-index: 98;
+  top: calc(50% - 150px);
+  left: calc(20% - 175px);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 1px 2px 8px 2px rgba(0,0,0,36%);
+}
+
+.contato  .contato-card h2 {
+  padding-left: 50px;
+  text-align: left;
+}
+
+.contato  .contato-card li {
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+  color: grey;
+  font-weight: bold;
+}
+
+.contato  .contato-card svg {
+  margin: 10px;
+  width: 16px;
+}
+
+/* RESPONSIVIDADE */
+
+
+@media(max-width: 950px) {
+  .contato {
+    padding: 60px 0;
+  }
+
+  .contato .contato-card {
+    left: 40px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .contato {
+    padding: 62px 0;
+    width: 100%;
+  }
+
+  .contato .contato-card {
+    position: static;
+    margin: 40px auto;
+  }
+}
+
+
+@media (max-width:480px) {
+
+  body {
+    margin-bottom: 55px;
+  }
+
+  header nav img {
+    margin: auto;
+    display: inline-block;
+    transform: translateY(-20px);
+  }
+
+  .header-container {
+    padding: 20px;
+  }
+
+  header nav ul {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #276573;
+    color: #ffffff;
+    font-weight: bold;
+    z-index: 99;
+  }
+
+  .servicos .card {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px  solid  #d7d7d7;
+  }
+
+  .servicos .servicos-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contato .espaco {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  header nav ul li a {
+    color: #fff;
+  }
+  
+  .header-container h1 {
+    font-size: 2.9em;
+  }
+
+}
